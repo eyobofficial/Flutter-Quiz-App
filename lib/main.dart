@@ -11,7 +11,7 @@ class QuizApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Quiz App',
+      title: 'Tech Quiz',
       theme: ThemeData(
         primaryColor: Colors.blueGrey,
       ),
@@ -67,7 +67,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Quiz Me')),
+      appBar: AppBar(title: Text('Tech Quiz')),
       body: isDone ? Result(_score, reset) : Quiz(_questions[_index], submitAnswer),
     );
   }
